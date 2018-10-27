@@ -1,0 +1,76 @@
+{
+    "name": "flare",
+    "children": [
+        {
+            "name": "Industry Knowledge",
+            "children": [
+                { "name": "Web Application", "size": 1000 },
+                { "name": "Software Development Life Cycle", "size": 3000 },
+                { "name": "Software Design", "size": 1000 },
+                { "name": "Agile Methodologies", "size": 1000 },
+                { "name": "Programming", "size": 600 },
+                { "name": "Research & Development", "size": 2000 },
+                { "name": "Requirement Analysis", "size": 1000 },
+                { "name": "DeOps", "size": 600 }
+            ]
+        },
+        {
+            "name": "Interpersonal Skills",
+            "children": [
+                { "name": "Communicaiton", "size": 500 },
+                { "name": "Problem Solving", "size": 1000 },
+                { "name": "Team Management", "size": 1000 },
+                { "name": "Leadership", "size": 500 }
+            ]
+        },
+        {
+            "name": "BackEnd",
+            "children": [
+                { "name": "Core Java", "size": 600 },
+                { "name": "Hibernate", "size": 600 },
+                { "name": "MultiThreading", "size": 1000 },
+                { "name": "Maven", "size": 600 },
+                { "name": "MongoDB", "size": 600 },
+                { "name": "MySQL", "size": 600 },
+                { "name": "RestFul Web Services", "size": 1000 },
+                { "name": "J2EE Web Service", "size": 1000 },
+                { "name": "JSON", "size": 600 },
+                { "name": "JSON Web Token(JWT)", "size": 1000 }
+            ]
+        },
+        {
+            "name": "FrontEnd",
+            "children": [
+                { "name": "Angular 2+", "size": 600 },
+                { "name": "HTML5", "size": 600 },
+                { "name": "CSS3", "size": 600 },
+                { "name": "BootStrap", "size": 600 },
+                { "name": "JavaScript", "size": 600 },
+                { "name": "JQuery", "size": 600 },
+                { "name": "REST", "size": 600 },
+                { "name": "Typescript", "size": 600 },
+                { "name": "Angular Material", "size": 1000 },
+                { "name": "User Interface Design", "size": 1000 }
+            ]
+        },
+        {
+            "name": "Tools",
+            "children": [
+                { "name": "Eclipse", "size": 600 },
+                { "name": "Visual Studio Code", "size": 1000 },
+                { "name": "GIT", "size": 600 },
+                { "name": "SVN", "size": 600 },
+                { "name": "Microsoft Office", "size": 1000 }
+            ]
+        },
+        {
+            "name": "MEAN Stack Devlopment",
+            "children": [
+                { "name": "MongoDB", "size": 500 },
+                { "name": "Express JS", "size": 1000 },
+                { "name": "Angular 2+", "size": 1000 },
+                { "name": "Node JS", "size": 500 }
+            ]
+        }
+    ]
+}

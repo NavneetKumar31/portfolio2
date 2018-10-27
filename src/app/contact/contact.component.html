@@ -1,0 +1,97 @@
+<div class="contact-container">
+  <div class="row">
+
+    <!-- social media -->
+    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" style="margin-top: 25px;">
+      <div class="box jumbotron">
+        <h4>Connect with me...</h4>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+              <div class="box-part text-center myCard">
+                <a target="_blank" href="https://www.instagram.com/navneet.dev/"><img alt="instagram" src="../../assets/icons/social media/instagram.png" /></a>
+                <div class="title">
+                  <h4>Instagram</h4>
+                </div>
+              </div>
+            </div>	 
+              
+            <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+              <div class="box-part text-center myCard">
+                <a target="_blank" href="https://linkedin.com/in/navneetkumar31/"><img alt="linkedin" src="../../assets/icons/social media/linkedin.png" /></a>
+                <div class="title">
+                  <h4>LinkedIn</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+              <div class="box-part text-center myCard">
+                <a target="_blank" href="https://www.facebook.com/navneet.dev"><img alt="facebook" src="../../assets/icons/social media/facebook.png" /></a>
+                <div class="title">
+                  <h4>Facebook</h4>
+                </div>
+              </div>
+            </div>	 
+              
+            <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+              <div class="box-part text-center myCard">
+                <a target="_blank" href="http://be.net/kumar_navneet"><img alt="behance" src="../../assets/icons/social media/behance.png" /></a>
+                <div class="title">
+                  <h4>Behance</h4>
+                </div>
+              </div>
+            </div>	 
+              
+            <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+              <div class="box-part text-center myCard">
+                <a target="_blank" href="plus.google.com/+NavneetKumar31"><img alt="google-plus" src="../../assets/icons/social media/google-plus.png" /></a>
+                <div class="title">
+                  <h4>Google+</h4>
+                </div>
+              </div>
+            </div>	 
+              
+            <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+              <div class="box-part text-center myCard">
+                <a target="_blank" href="https://github.com/NavneetKumar31"><img alt="Github" src="../../assets/icons/social media/Github.png" /></a>
+                <div class="title">
+                  <h4>Github</h4>
+                </div>
+              </div>
+            </div>
+          </div>		
+        </div>
+      </div>
+    </div>
+
+    <!-- contact form -->
+    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+      <div class="myContact-form jumbotron row myCard">
+        <h4>Leave a message...</h4>
+        <form [formGroup]="contactForm" (ngSubmit)="sendMsg()">
+          <mat-form-field class="input-full-width col-12">
+            <input matInput placeholder="Name" formControlName="name" required/>
+          </mat-form-field>
+
+          <mat-form-field class="input-full-width col-12">
+            <input matInput placeholder="Email Id" formControlName="email" required/>
+          </mat-form-field>
+
+          <mat-form-field class="input-full-width col-12">
+            <textarea matInput placeholder="About your project" formControlName="msg"></textarea>
+          </mat-form-field>
+
+          <button mat-stroked-button type="submit" color="primary" [disabled]="contactForm.invalid"> Send </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- google maps -->
+    <div class="col-12">
+      <div class="map-container">
+        <div id="map"></div>
+      </div>
+    </div>
+  </div>
+</div>

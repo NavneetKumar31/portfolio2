@@ -1,0 +1,139 @@
+.contact-container {
+
+    .row {
+        margin: 0 !important;
+    }
+
+    span {
+        font-size:15px;
+    }
+    
+    a {
+      text-decoration:none;
+    }
+    
+    .box {
+        min-height: 330px;
+        padding: 2% 5%;
+        margin: 30px auto;
+    }
+    
+    .box-part {
+        background: #FFF;
+        border-radius: 0;
+        padding: 5px !important;
+        margin: 15px auto;
+        width: 120px;
+        border-radius: 5px;
+
+        img {
+            height: 50px;
+            width: 50px;
+        }
+
+    }
+
+    .myContact-form {
+        min-height: 330px !important;
+        padding: 2% 5% !important;
+        margin: 30px auto !important;
+
+        form {
+            button {
+                float: right;
+            }
+        }
+    }
+
+    .map-container {
+        // padding: 1rem 0rem;
+
+        #map {
+            width: 100%;
+            min-height: 400px;
+            position: relative;
+            overflow: hidden;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 650px) {
+    .contact-container {
+
+        .row {
+            margin: 0 !important;
+        }
+
+        h4 {
+            margin-bottom: 0 !important;
+            margin-left: 5%;
+            font-size: 15px;
+        }
+    
+        span {
+            font-size:15px;
+        }
+        
+        a {
+          text-decoration:none;
+        }
+        
+        .box {
+            min-height: 280px;
+            padding: 2% 0;
+            margin: 10px auto;
+        }
+        
+        .box-part {
+            background: #FFF;
+            border-radius: 0;
+            padding: 5px !important;
+            margin: 15px auto;
+            width: 70px;
+            border-radius: 5px;
+
+            .title {
+                h4 {
+                    font-size: 12px !important;
+                    margin: 0;
+                }
+            }
+    
+            img {
+                height: 30px;
+                width: 30px;
+            }
+    
+        }
+
+        .map-container {
+            padding: 1rem 0rem;
+    
+            #map {
+                width: 100%;
+                min-height: 400px;
+                position: relative;
+                overflow: hidden;
+                height: auto;
+                margin-bottom: 1rem;
+            }
+        }
+    
+        .myContact-form {
+            min-height: 300px !important;
+            padding: 5% 0 !important;
+            margin-top: 0 !important;
+            margin: 10px auto;
+    
+            form {
+                button {
+                    margin-right: 10px;
+                    float: right;
+                }
+            }
+        }
+    }
+}

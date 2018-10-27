@@ -1,0 +1,79 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "./assets/scss/variables.scss";
+
+html,
+body {
+    height: 100%;
+    background-color: #ccc;
+}
+
+button {
+    outline: none !important;
+}
+
+.myModal {
+
+    .w3-modal-content {
+        background-color: transparent;
+
+        .modalHeader {
+            background-color: transparent;
+
+            button {
+                float: right;
+                background-color: #ccc;
+                margin-bottom: 1.5rem;
+
+                mat-icon {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.node {
+    cursor: pointer;
+}
+
+.node:hover {
+    stroke: #000;
+    stroke-width: 1.5px;
+}
+
+.node--leaf {
+    fill: white;
+}
+
+.label {
+    font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-anchor: middle;
+    text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+.label,
+.node--root,
+.node--leaf {
+    pointer-events: none;
+}
+
+.myCard {
+    padding: 20px !important;
+    // transition: box-shadow .3s ease-in-out;
+    // box-shadow: 0 2px 5px rgba(40,40,40,.16);
+    box-shadow: none !important;
+
+    &:hover {
+        transition: box-shadow .3s ease-in-out;
+        box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3), 0 14px 12px 0 rgba(0, 0, 0, 0.17) !important;
+    }
+}
+
+p {
+    text-align: justify !important;
+}
+
+.img-c {
+    width: 33.33% !important;
+}

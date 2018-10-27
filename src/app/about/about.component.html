@@ -1,0 +1,57 @@
+<div id="about-container">
+  <div class="row">
+
+    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      <mat-card id="aboutCard">
+        <mat-card-content>
+          <h3>ABOUT ME</h3>
+          <h5>I'm a Full Stack Developer based in Pune, India.</h5>
+          <p>
+            Everything started with the passion towards techonology. In 2016, 
+            I got my first job as a Graduate Engineer Trainee in LTI, Chennai.
+            Right now I have 2 years of experience as a Full Stack Developer in LTI, Pune.
+            I enjoy turning complex problems into simple, beautiful and intuitive designs.
+          </p>
+          <p>
+            When I'm not coding, tweeting or pushing pixels, you'll find me cooking, watching
+            movies, listening to music or working out at the gym.
+          </p>
+          <p>
+            Main area of my expertise is front end development and everything related with
+            this side of web, HTML, CSS, JavaScript building small & big Web Apps, Angular 2+,
+            features and animations. I also work as a Full Stack Developer - mainly in MEAN Stack
+            environment and java restful services. I have experience with MongoDB,
+            MySql and Node.JS too.<br> Would like to know more? Please check my
+            <a href="https://linkedin.com/in/navneetkumar31/">LinkedIn</a>
+            profile or just
+            <span (click)="routing('contact')">contact</span>
+            me.
+          </p>
+          <a mat-stroked-button target="_blank" href="https://drive.google.com/file/d/1uYzT6Svx6SgOpaaEmBZ3NuPbw28JHmor/view">Download CV</a>
+        </mat-card-content>
+      </mat-card>
+   </div>
+
+   <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      <div class="chart-container">
+        <div class="chart-info">
+          Skills...
+        </div>
+        <div class="skill-chart myCard">
+          <svg height="500" width="500"></svg>
+        </div>
+      </div>  
+   </div>
+
+   <div class="col-12 thumbnil-container">
+     <div class="row">
+       <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3"
+       *ngFor="let img of myImages; let i=index">
+         <div class="img-thumbnail">
+          <img class="img-fluid" alt="i" [src]="img">
+         </div>
+       </div>
+     </div>
+   </div>
+  </div>
+</div>

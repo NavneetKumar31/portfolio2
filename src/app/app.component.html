@@ -1,0 +1,53 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div id="app-container">
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav mode="over" #sidenav opened="false" id="sidenav">
+  
+      <div id="brand-info">
+        <div id="brand-logo">
+          <img alt="Brand Logo" class="img-fluid" src="../../assets/logo/nk2.png" />
+        </div>
+        <div class="text-center" id="brand-name">
+          {{brand$.name |titlecase}}
+        </div>
+      </div>
+  
+      <div class="text-center" id="nav-panel">
+        <ul class="list-unstyled" id="my-nav-list">
+          <li class="list-item" (click)="routing('home')">
+            <img alt="home" src="../../assets/icons/general icons/home.png" />
+            <p>home</p>
+          </li>
+          <li class="list-item" (click)="routing('about')">
+            <img alt="about" src="../../assets/icons/general icons/user.png" />
+            <p>about me</p>
+          </li>
+          <!-- <li class="list-item" (click)="routing('skills')">
+            <img alt="skills" src="../../assets/icons/general icons/setting.png" />
+            <p>skills</p>
+          </li> -->
+          <li class="list-item" (click)="routing('work')">
+            <img alt="my work" src="../../assets/icons/general icons/work.png" />
+            <p>my work</p>
+          </li>
+          <!-- <li class="list-item" (click)="routing('resume')">
+            <img alt="resume" src="../../assets/icons/general icons/resume.png" />
+            <p>resume</p>
+          </li> -->
+          <li class="list-item" (click)="routing('contact')">
+            <img alt="contacts" src="../../assets/icons/general icons/email.png" />
+            <p>contact</p>
+          </li>
+        </ul>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content id="sidenav-content">
+      <button mat-button color="primary" (click)="sidenav.toggle()">
+        <mat-icon>navigate_before</mat-icon>
+        <!-- <img alt="Brand Logo" class="img-fluid" src="../../assets/logo/nk2.png" />
+        <p>Navneet Kumar</p> -->
+      </button>
+      <router-outlet></router-outlet>    
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

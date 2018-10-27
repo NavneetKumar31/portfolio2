@@ -1,0 +1,77 @@
+<!-- modal for screenshots -->
+<div id="picModal01" class="w3-modal myModal">
+  <div class="w3-modal-content w3-card-4">
+
+    <header class="w3-container modalHeader"> 
+      <button mat-icon-button class="w3-button w3-display-topright"
+      onclick="document.getElementById('picModal01').style.display='none'">
+        <mat-icon>close</mat-icon>
+      </button>
+    </header>
+
+    <div class="w3-container modalContainer">
+      <div class="my-img-container">
+        <button mat-icon-button class="leftBtn"
+        (click)="preScreenshot()">
+          <mat-icon>navigate_before</mat-icon>
+        </button>
+        <button mat-icon-button class="rightBtn"
+        (click)="nextScreenshot()">
+          <mat-icon>navigate_next</mat-icon>
+        </button>
+        <img class="img-fluid" alt="screenshots" [src]="screenshot" />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="page-container">
+  <div class="container services-container">
+    <h3 class="div-title">SERVICES</h3>
+    <div class="row mt-40">
+      <div class="col-sm-6 col-md-4"
+      *ngFor="let service of services">
+        <div class="box1">
+          <img [src]="service.img" [alt]="service.name">
+          <h3 class="title">{{service.name}}</h3>
+          <ul class="icon">
+            <li>
+              <a target="_blank" [href]="service.link"
+              matTooltip="Read more">
+                <mat-icon>explore</mat-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-40 work-container">
+    <h3 class="div-title">MY WORK</h3>
+    <div class="row mt-30">
+      <div class="col-md-3 col-sm-6"
+      *ngFor="let work of works">
+        <div class="box3">
+          <img class="img-fluid" [src]="work.banner" [alt]="work.name">
+          <div class="box-content">
+            <h3 class="title">{{work.name |titlecase}}</h3>
+            <span class="post">{{work.subtitle}}</span>
+            <p class="description">
+              {{work.content}}
+            </p>
+            <ul class="icon">
+              <li>
+                <a matTooltip="more"
+                (click)="selectWork(work);">
+                  <mat-icon>explore</mat-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

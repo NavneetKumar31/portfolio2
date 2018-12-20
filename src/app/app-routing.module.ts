@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'work', component: WorkComponent },
   { path: 'resume', component: ResumeComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'img-gallery', component: ImgGAlleryComponent },
+  { path: 'img-gallery/:project_name', component: ImgGAlleryComponent },
   { path: '**', component: ErrorComponent }
 ];
 

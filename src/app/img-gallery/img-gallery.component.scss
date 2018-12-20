@@ -1,9 +1,118 @@
-.dice_main_container {
-    min-height: 100%;
+// .dice_main_container {
+//     min-height: 100%;
+//     border: 1px solid #f3f;
+//     margin: 1%;
+//     opacity: 0.9;
+//     margin-top: 3%;
+//     padding-top: 30px !important;
+//     padding-bottom: 30px !important;
+// }
+
+.myModal {
+    .modalContainer {
+        .my-img-container {
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        button {
+            position: absolute;
+            background-color: #ccc;
+
+            mat-icon {
+                color: white;
+            }
+        }
+
+        .leftBtn {
+            top: 50%;
+            left: 0;
+        }
+
+        .rightBtn {
+            top: 50%;
+            right: 15px;
+        }
+    }
+}
+
+.gallery-container {
+    height: fit-content;
     border: 1px solid #f3f;
     margin: 1%;
-    opacity: 0.9;
-    margin-top: 3%;
-    padding-top: 30px !important;
-    padding-bottom: 30px !important;
+    padding: 0px 20px !important;
+    opacity: 1;
+    margin-top: 2.5%;
+    overflow: hidden;
+
+    h3 {
+        text-align: center;
+        font-size: 35px;
+        font-family: sans-serif;
+        font-weight: 600;
+    }
+
+    .gallery-row {
+        margin: 0 !important;
+    }
+
+    .col-container {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .img-outer-container {
+        background-color: white;
+        height: 220px;
+        padding: 1%;
+        margin: 2% auto;
+        border: 1px solid goldenrod;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.02);
+            transition: transform ease 350ms, left cubic-bezier(0.4, 0, 0.2, 1) 420ms, top cubic-bezier(0.4, 0, 0.2, 1) 420ms;
+        }
+
+        .img-inner-container {
+            // border: 1px solid black;
+            height: 100%;
+            width: 100%;
+
+            &:hover {
+                transform: scale(1.02);
+                transition: transform ease-in-out 300ms;
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only Screen and (max-width: 600px) {
+    .gallery-container[_ngcontent-c5] {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        border: 1px solid #f3f;
+        margin: 1%;
+        padding: 0px 20px !important;
+        opacity: 1;
+        margin-top: 10%;
+
+        h3 {
+            text-align: center;
+            font-size: 30px;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+    }
 }

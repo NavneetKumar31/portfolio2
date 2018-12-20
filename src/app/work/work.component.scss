@@ -1,29 +1,5 @@
 @import "../../assets//scss/variables.scss";
 
-.myModal {
-
-    .modalContainer {
-        button {
-            position: absolute;
-            background-color: #ccc;
-
-            mat-icon {
-                color: white;
-            }
-        }
-
-        .leftBtn {
-            top: 50%;
-            left: 0;
-        }
-
-        .rightBtn {
-            top: 50%;
-            right: 0;
-        }
-    }
-}
-
 .page-container {
     height: 100%;
 

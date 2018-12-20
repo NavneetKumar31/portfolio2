@@ -103,29 +103,7 @@ export class WorkComponent implements OnInit {
     this.selectedWork = myWork.screenShots;
     console.log(this.selectedWork);
     this.screenshot = this.selectedWork[0];
-    this._router.navigate(['img-gallery']);
+    // document.getElementById('picModal01').style.display = 'block';
+    this._router.navigate(['img-gallery', myWork.name]);
   }
-
-  preScreenshot() {
-    this.imgIndex--;
-    if (this.imgIndex < 0) {
-      this.screenshot = this.selectedWork[this.selectedWork.length - 1];
-      this.imgIndex = this.selectedWork.length - 1;
-    } else {
-      this.screenshot = this.selectedWork[this.imgIndex];
-    }
-    console.log(this.screenshot + ' > ' + this.imgIndex);
-  }
-
-  nextScreenshot() {
-    this.imgIndex++;
-    if (this.imgIndex > (this.selectedWork.length - 1)) {
-      this.imgIndex = 0;
-      this.screenshot = this.selectedWork[0];
-    } else {
-      this.screenshot = this.selectedWork[this.imgIndex];
-    }
-    console.log(this.screenshot + ' > ' + this.imgIndex);
-  }
-
 }

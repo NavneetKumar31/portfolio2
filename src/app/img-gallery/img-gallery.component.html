@@ -1,4 +1,4 @@
-<div class="dice_main_container jumbotron">
+<!-- <div class="dice_main_container jumbotron">
   <div class="row marzero">
     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
       <div class="gallery">
@@ -11,6 +11,47 @@
         <div class="img-w"><img class="img-fluid" src="https://images.unsplash.com/photo-1485889397316-8393dd065127?dpr=1&auto=format&fit=crop&w=1500&h=843&q=80&cs=tinysrgb&crop=" alt="" /></div>
         <div class="img-w"><img class="img-fluid" src="https://images.unsplash.com/photo-1485871800663-71856dc09ec4?dpr=1&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=" alt="" /></div>
         <div class="img-w"><img class="img-fluid" src="https://images.unsplash.com/photo-1485871882310-4ecdab8a6f94?dpr=1&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=" alt="" /></div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- modal for screenshots -->
+<div id="picModal01" class="w3-modal myModal">
+  <div class="w3-modal-content w3-card-4">
+
+    <header class="w3-container modalHeader"> 
+      <button mat-icon-button class="w3-button w3-display-topright"
+      onclick="document.getElementById('picModal01').style.display='none'">
+        <mat-icon>close</mat-icon>
+      </button>
+    </header>
+
+    <div class="w3-container modalContainer">
+      <button mat-icon-button class="leftBtn"
+      (click)="preScreenshot()">
+        <mat-icon>navigate_before</mat-icon>
+      </button>
+      <button mat-icon-button class="rightBtn"
+      (click)="nextScreenshot()">
+        <mat-icon>navigate_next</mat-icon>
+      </button>
+
+      <div class="my-img-container">
+        <img class="img-fluid" alt="screenshots" [src]="screenshot" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="gallery-container jumbotron">
+  <h3>{{project_name |titlecase}}</h3>
+  <div class="row gallery-row">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-container"
+    *ngFor="let work of selectedWork">
+      <div class="img-outer-container"
+      (click)="openModal('picModal01');">
+        <div class="img-inner-container"><img class="img-fluid" [src]="work" alt="work" /></div>
       </div>
     </div>
   </div>

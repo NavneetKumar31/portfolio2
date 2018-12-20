@@ -6,6 +6,7 @@ html,
 body {
     height: 100%;
     background-color: #ccc;
+    overflow: hidden;
 }
 
 button {
@@ -13,9 +14,15 @@ button {
 }
 
 .myModal {
+    height: 100% !important;
+    widows: 100% !important;
+    padding: 0 !important;
+    padding-top: 10px !important;
 
     .w3-modal-content {
         background-color: transparent;
+        width: 98% !important;
+        height: 100% !important;
 
         .modalHeader {
             background-color: transparent;
@@ -76,4 +83,12 @@ p {
 
 .img-c {
     width: 33.33% !important;
+    padding: 1%;
+}
+
+@media only Screen and (max-width: 600px) {
+    .img-c {
+        width: 50% !important;
+        padding: 2%;
+    }   
 }
